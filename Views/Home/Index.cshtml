@@ -1,0 +1,20 @@
+﻿@model IEnumerable<AllinDigitalTools.Models.DelielsModel>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1>this is my app</h1>
+    <legend>welcome legend</legend>
+
+    @foreach (var item in Model)
+    {
+        <h1>this is my app @Html.DisplayTextFor(modelitem => item.Age)</h1>
+        <h1>this is my app @Html.DisplayTextFor(modelitem => item.Name)</h1>
+
+    }
+
+</div>
